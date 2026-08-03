@@ -1,0 +1,17 @@
+name = "teammarysy-bot"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+[triggers]
+crons = ["*/15 * * * *"]
+
+[[kv_namespaces]]
+binding = "KV"
+id = "your_kv_namespace_id"
+
+[vars]
+OWNER_ID = "123456789"
+
+# Secrets are NOT stored here. Set them with:
+#   wrangler secret put TG_BOT_TOKEN
+#   wrangler secret put TG_BOT_SECRET_TOKEN
