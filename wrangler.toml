@@ -1,11 +1,8 @@
-name = "teammarysy-bot"
-main = "src/index.js"
-compatibility_date = "2026-01-01"
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "WORKER-NAME",
+  "name": "@Assistant_Sybot",
   "main": "src/index.ts",
-  "compatibility_date": "2025-02-04",
+  "compatibility_date": "2026-08-08",
   "observability": {
     "enabled": true
   },
@@ -14,10 +11,10 @@ compatibility_date = "2026-01-01"
   "kv_namespaces": [
     {
       "binding": "KV",
-      "id": "196a97524d58414d867238424346135b",
+      "id": "014aa092b3a349e58383b7fbe495cec0",
       
-      // Optional: preview_id used when running `wrangler dev` for local dev
-      "preview_id": "<ID_OF_PREVIEW_KV_NAMESPACE_FOR_LOCAL_DEVELOPMENT>"
+      // Optional: preview_id used when running wrangler dev for local dev
+      "preview_id": "93f8cd58fa693ec493905b7a56866381"
     }
   ]
 }
