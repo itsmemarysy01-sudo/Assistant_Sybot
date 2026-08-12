@@ -1,17 +1,20 @@
-name = "teammarysy-bot"
-main = "src/index.js"
-compatibility_date = "2026-01-01"
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "@Assistant_Sybot",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-08",
+  "observability": {
+    "enabled": true
+  },
 
-[triggers]
-crons = ["*/15 * * * *"]
-
-[[kv_namespaces]]
-binding = "KV"
-id = "your_kv_namespace_id"
-
-[vars]
-OWNER_ID = "123456789"
-
-# Secrets are NOT stored here. Set them with:
-#   wrangler secret put TG_BOT_TOKEN
-#   wrangler secret put TG_BOT_SECRET_TOKEN
+  // Add this to your wrangler.jsonc
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "014aa092b3a349e58383b7fbe495cec0",
+      
+      // Optional: preview_id used when running wrangler dev for local dev
+      "preview_id": "93f8cd58fa693ec493905b7a56866381"
+    }
+  ]
+}
