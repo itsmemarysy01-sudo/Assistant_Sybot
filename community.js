@@ -1,5 +1,5 @@
-import { telegram } from "../telegram.js";
-import { getAdmins } from "../kv/config.js";
+import { telegram } from "./telegram.js";
+import { getAdmins } from "./config.js";
 
 export const Community = {
   async notifyJoinRequest(request, env) {

@@ -1,5 +1,5 @@
-import { telegram } from "../telegram.js";
-import { getConfig } from "../kv/config.js";
+import { telegram } from "./telegram.js";
+import { getConfig } from "./config.js";
 
 export const Content = {
   // Placeholder menu — full create/list/archive UX is not yet implemented (see README).

@@ -1,9 +1,9 @@
-import { telegram } from "../telegram.js";
-import { Content } from "../modules/content.js";
-import { Community } from "../modules/community.js";
-import { Support } from "../modules/support.js";
-import { isAdminOrOwner } from "../kv/config.js";
-import { validateCallbackIds } from "../utils/validate.js";
+import { telegram } from "./telegram.js";
+import { Content } from "./content.js";
+import { Community } from "./community.js";
+import { Support } from "./support.js";
+import { isAdminOrOwner } from "./config.js";
+import { validateCallbackIds } from "./validate.js";
 
 // Callback prefixes that require Owner/Admin before executing.
 const PRIVILEGED_PREFIXES = ["menu:content", "menu:community", "join:", "support:resolve", "content:"];

@@ -1,6 +1,6 @@
-import { listDueItems, markSent, markFailed, purgeSentSchedules, purgeFailedSchedules } from "../kv/schedules.js";
-import { purgeResolvedTickets } from "../kv/tickets.js";
-import { Content } from "../modules/content.js";
+import { listDueItems, markSent, markFailed, purgeSentSchedules, purgeFailedSchedules } from "./schedules.js";
+import { purgeResolvedTickets } from "./tickets.js";
+import { Content } from "./content.js";
 
 // Retention windows for cleanup — chosen to keep KV lean without discarding
 // records too aggressively for someone to review after the fact.

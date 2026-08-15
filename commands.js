@@ -1,8 +1,8 @@
-import { normalizeCommand } from "../utils/validate.js";
-import { Content } from "../modules/content.js";
-import { Support } from "../modules/support.js";
-import { telegram } from "../telegram.js";
-import { isAdminOrOwner } from "../kv/config.js";
+import { normalizeCommand } from "./validate.js";
+import { Content } from "./content.js";
+import { Support } from "./support.js";
+import { telegram } from "./telegram.js";
+import { isAdminOrOwner } from "./config.js";
 
 export async function handleMessage(update, env) {
   const message = update.message;

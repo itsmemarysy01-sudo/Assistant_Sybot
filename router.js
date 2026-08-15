@@ -1,7 +1,7 @@
-import { handleMessage } from "./handlers/commands.js";
-import { handleCallback } from "./handlers/callbacks.js";
-import { handleJoinRequest } from "./handlers/joins.js";
-import { runScheduledTasks } from "./scheduler/tasks.js";
+import { handleMessage } from "./commands.js";
+import { handleCallback } from "./callbacks.js";
+import { handleJoinRequest } from "./joins.js";
+import { runScheduledTasks } from "./tasks.js";
 
 export async function route(update, env) {
   if (update.message) {

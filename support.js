@@ -1,6 +1,6 @@
-import { telegram } from "../telegram.js";
-import { getState, setState, clearState } from "../kv/state.js";
-import { getAdmins } from "../kv/config.js";
+import { telegram } from "./telegram.js";
+import { getState, setState, clearState } from "./state.js";
+import { getAdmins } from "./config.js";
 
 const FLOW = "support";
 
